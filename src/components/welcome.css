@@ -12,3 +12,13 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+@media all and (max-width: 430px) {
+    h1 {
+        font-size: medium;
+    }
+
+    .welcome_img {
+        width: 200px;
+    }
+}
