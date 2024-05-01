@@ -1,5 +1,7 @@
 .welcome_container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -8,9 +10,33 @@
 }
 
 h1 {
-  font-family: "Pacifico", cursive;
+  font-family: "Jersey 15", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+button{
+font-family: "Jersey 15", sans-serif;
+  padding: 25px 30px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 
 @media all and (max-width: 430px) {
