@@ -1,24 +1,40 @@
 import React, { useState } from "react";
-import './password.css'
-
+import "./password.css";
+import { useNavigate } from "react-router-dom";
+import Home from "../home/Home";
 
 function Password() {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate()
 
   const submit = (e) => {
-    setInputValue(inputValue)
-    console.log(inputValue)
-  }
-  
-  const change =(e) =>{
+    setInputValue(inputValue);
+    console.log(inputValue);
+     if (inputValue === "password") {
+       console.log("WOO HOO");
+       navigate('/home')
+     } else {
+       console.log("Nope");
+     }
+  };
+
+  const change = (e) => {
     setInputValue(e.target.value);
-  }
+  };
+
 
   return (
     <div className="input_password">
       <h1>Input Password</h1>
       <h3>Don't have one? Ask the bride if you're even invited lol</h3>
-      <input onChange={change} type="text" value={inputValue} />
+
+      <input
+        className="input_bar"
+        onChange={change}
+        type="text"
+        value={inputValue}
+      />
+      <br />
       <button onClick={submit}>Submit</button>
     </div>
   );
