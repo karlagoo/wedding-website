@@ -9,12 +9,13 @@ function Password() {
 
   const submit = (e) => {
     setInputValue(inputValue);
-    console.log(inputValue);
+    //console.log(inputValue);
      if (inputValue === "password") {
        console.log("WOO HOO");
        navigate('/home')
      } else {
-       console.log("Nope");
+       //console.log("Nope");
+       alert("Wrong Password >:(")
      }
   };
 
