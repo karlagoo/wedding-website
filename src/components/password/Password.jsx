@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./password.css";
 import { useNavigate } from "react-router-dom";
-import Home from "../home/Home";
 
 function Password() {
   const [inputValue, setInputValue] = useState("");
@@ -11,7 +10,7 @@ function Password() {
     setInputValue(inputValue);
     //console.log(inputValue);
      if (inputValue === "password") {
-       console.log("WOO HOO");
+       //console.log("WOO HOO");
        navigate('/home')
      } else {
        //console.log("Nope");

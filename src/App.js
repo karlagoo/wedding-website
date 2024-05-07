@@ -3,6 +3,10 @@ import './App.css';
 import Welcome from './components/welcome/Welcome';
 import Password from './components/password/Password';
 import Home from './components/home/Home';
+import Faq from './components/faq/Faq';
+import OurStory from './components/story/OurStory';
+import Registry from './components/registry/Registry';
+import Venue from './components/venue/Venue';
 
 function App() {
   return (
@@ -11,6 +15,10 @@ function App() {
         <Route path='/' element={<Welcome />} />
         <Route path='/password' element={<Password />}/>
         <Route path='/home' element={<Home />}/>
+        <Route path='/faq' element={<Faq />} />
+        <Route path='/ourstory' element={<OurStory />} />
+        <Route path='/registry' element={<Registry />} />
+        <Route path='/venue' element={<Venue />} />
       </Routes>
 
     </div>
