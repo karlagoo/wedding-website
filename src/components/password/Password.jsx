@@ -11,7 +11,7 @@ function Password() {
     //console.log(inputValue);
      if (inputValue === "password") {
        //console.log("WOO HOO");
-       navigate('/home')
+       navigate('/captcha')
      } else {
        //console.log("Nope");
        alert("Wrong Password >:(")

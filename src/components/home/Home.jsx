@@ -27,7 +27,6 @@ function Home() {
           </div>
         </nav>
       </header>
-        <Captcha />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Faq from './components/faq/Faq';
 import OurStory from './components/story/OurStory';
 import Registry from './components/registry/Registry';
 import Venue from './components/venue/Venue';
+import Captcha from './components/captcha/Captcha';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Welcome />} />
         <Route path='/password' element={<Password />}/>
+        <Route path='/captcha' element={<Captcha />} />
         <Route path='/home' element={<Home />}/>
         <Route path='/faq' element={<Faq />} />
         <Route path='/ourstory' element={<OurStory />} />
