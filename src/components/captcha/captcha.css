@@ -6,9 +6,8 @@
 
 .cell {
     flex: 0 0 33%;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 5px;
+    /* height: 100px; */
+    width: 3.2rem;
     text-align: center;
 }
 
