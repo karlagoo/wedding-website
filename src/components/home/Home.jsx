@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 import { NavLink } from "react-router-dom";
-import Captcha from "../captcha/Captcha";
 
 function Home() {
 
