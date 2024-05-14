@@ -20,8 +20,18 @@
   padding-left: 0px;
 }
 
+.home_image {
+  width: 20rem;
+  height: 20rem;
+}
+
 .menu {
   width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @media all and (max-width: 430px) {

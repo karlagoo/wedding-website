@@ -9,15 +9,18 @@ import Pic6 from "../../assets/faketalkajimmy5.jpg";
 import Pic7 from "../../assets/fakejimmytalka6.jpg";
 import Pic8 from "../../assets/fakejimmytalka7.jpg";
 import Pic9 from "../../assets/fakejimmytalka8.jpg";
-
+import { useNavigate } from "react-router-dom";
+import Home from "../home/Home";
 
 function Captcha() {
+  const navigate = useNavigate();
   const click = () => {
-    console.log('Correct!!!');
+    //console.log("Correct!!!");
+    navigate('/home')
   };
 
   const wrongClick = () => {
-    console.log("wrong pic");
+    alert("WRONG 👹");
   };
 
   return (
@@ -53,12 +56,7 @@ function Captcha() {
           <img onClick={() => wrongClick()} src={Pic8} alt="talka-jimmy" />
         </div>
         <div className="cell">
-          <img
-            id="correctImg"
-            onClick={() => click()}
-            src={Pic9}
-            alt="talka-jimmy"
-          />
+          <img onClick={() => wrongClick()} src={Pic9} alt="talka-jimmy" />
         </div>
       </div>
     </div>

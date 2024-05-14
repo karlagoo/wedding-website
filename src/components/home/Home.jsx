@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import { NavLink } from "react-router-dom";
+import Homepic from '../../assets/homePic.png'
 
 function Home() {
 
@@ -26,6 +27,9 @@ function Home() {
           </div>
         </nav>
       </header>
+      <div>
+        <img className='home_image' src={Homepic} alt="" />
+      </div>
     </div>
   );
 }
