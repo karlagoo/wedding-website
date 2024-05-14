@@ -10,7 +10,6 @@ import Pic7 from "../../assets/fakejimmytalka6.jpg";
 import Pic8 from "../../assets/fakejimmytalka7.jpg";
 import Pic9 from "../../assets/fakejimmytalka8.jpg";
 import { useNavigate } from "react-router-dom";
-import Home from "../home/Home";
 
 function Captcha() {
   const navigate = useNavigate();
