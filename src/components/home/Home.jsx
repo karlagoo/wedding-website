@@ -7,9 +7,7 @@ function Home() {
 
   return (
     <div>
-      <header className="header">
         <Navbar/>
-      </header>
       <div>
         <img className='home_image' src={Homepic} alt="" />
       </div>

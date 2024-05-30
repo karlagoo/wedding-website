@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 1rem;
+  justify-content: center;
 }
 
 .nav_toggle {
@@ -21,7 +22,7 @@
 
 .nav_list {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 25rem;
 }
 
 .nav_close, .nav_toggle {
@@ -48,9 +49,9 @@
     margin: 0 0 var(--header-height) 0;
   }
 
-  .section {
+  /* .section {
     padding: 2rem 0 4rem;
-  }
+  } */
 
   .section__subtitle {
     margin-bottom: var(--mb-3);
@@ -60,5 +61,6 @@
 @media all and (max-width: 430px) {
   .nav_list {
     display: block;
+    column-gap: 2rem;
   }
 }
