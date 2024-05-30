@@ -23,7 +23,7 @@ function Captcha() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h3 className="captcha_title">
         Prove you're not a robot: Find the real Talka and Jimmy
       </h3>

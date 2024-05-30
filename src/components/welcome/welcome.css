@@ -1,41 +1,33 @@
-.welcome_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.container2 {
+  background-color: #eddada;
+  height: 25rem;
+  width: 25rem;
+  position: relative;
 }
 
-.welcome_img {
-  width: 300px;
-  height: 250px;
-  animation: profile__animate 8s ease-in-out infinite 1s
-}
-
-@keyframes profile__animate {
-  0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
+.container2,
+.welcome_container{
+ margin: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-right: -50%;
+ transform: translate(-50%, -50%);
 }
 
 h1, h2, h3 {
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: var(--h1-font-size);
+  text-align: center;
+  margin: 0;
 }
 
 button{
 font-family: "Jersey 15", sans-serif;
   padding: 25px 30px;
-  background-color: #050801;
-  color: #03e9f4;
+  background-color: #eddada;
+  color: #78667e;
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -46,12 +38,12 @@ font-family: "Jersey 15", sans-serif;
 }
 
 button:hover{
-    background: #03e9f4;
+    background: #f9f9ee;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
+    box-shadow: 0 0 5px #f9f9ee,
+                0 0 25px #f9f9ee,
+                0 0 50px #f9f9ee,
+                0 0 200px #f9f9ee;
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 
@@ -64,7 +56,4 @@ button:hover{
         width: 100%;
     }
 
-    .welcome_container {
-        flex-direction: column-reverse;
-    }
 }

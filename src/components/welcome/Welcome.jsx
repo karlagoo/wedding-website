@@ -1,23 +1,22 @@
 import React from "react";
 import "./welcome.css";
-import Pic from "../../assets/Subject.png";
 import { useNavigate } from "react-router-dom";
-
 
 function Welcome() {
   const navigate = useNavigate();
 
-  
   return (
-    <div className="container">
+    <div className="container2">
       <div className="welcome_container">
-        <div className="paragraph_container">
-          <h1>Welcome to Natalia's and Jimmy's Wedding website</h1>
-
-         <button onClick={()=> navigate('/password')}>Let's Party→</button>
-        </div>
-
-        <img src={Pic} alt="" className="welcome_img" />
+        <h1>Natalia</h1>
+        <h1>&</h1>
+        <h1>Jimmy</h1><br /><br />
+        <h2>Are Getting Hitched</h2><br />
+        <h3>9/29/24</h3>
+        <h3>Chicago, Illinois</h3>
+        
+          <button onClick={() => navigate("/password")}>Let's Party→</button>
+        
       </div>
     </div>
   );
