@@ -3,7 +3,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  
+}
+
+.home_image {
+  width: 25rem;
+  height: 25rem;
 }
 
 
