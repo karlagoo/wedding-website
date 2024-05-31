@@ -56,13 +56,14 @@
 }
 
 body {
-  background-image: url(./assets/background4.jpeg);
+  background-image: url(./assets/background.jpeg);
   background-repeat: repeat;
   background-position: right center;
+  background-size: cover;
 }
 
 .container {
-  background-color: #eddada;
+  background-color: #F4F4F2;
   /* padding-top: .5rem;
   width: 30rem; */
 }

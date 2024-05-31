@@ -3,7 +3,11 @@ import Navbar from '../navbar/Navbar';
 
 function Faq() {
   return (
-    <div>Faq</div>
+    <div>
+      <header>
+        <Navbar/>
+      </header>
+    </div>
   )
 }
 

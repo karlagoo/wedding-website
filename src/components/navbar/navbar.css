@@ -6,6 +6,10 @@
   z-index: var(--z-fixed);
 }
 
+.nav_item {
+  font-family: "Playfair Display", serif;;
+}
+
 .nav {
   height: calc(var(--header-height) + 1rem);
   display: flex;
