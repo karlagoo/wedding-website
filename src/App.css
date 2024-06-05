@@ -64,8 +64,6 @@ body {
 
 .container {
   background-color: #F4F4F2;
-  /* padding-top: .5rem;
-  width: 30rem; */
 }
 
 h1,
@@ -77,6 +75,7 @@ h3 {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 350px) {

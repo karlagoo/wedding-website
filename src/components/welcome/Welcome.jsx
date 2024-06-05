@@ -12,7 +12,7 @@ function Welcome() {
         <h1>&</h1>
         <h1>Jimmy</h1><br /><br />
         <h2>Are Getting Hitched</h2><br />
-        <h3>9/29/24</h3>
+        <h3>August 2nd, 2025</h3>
         <h3>Chicago, Illinois</h3>
         
           <button onClick={() => navigate("/password")}>Let's Party→</button>
