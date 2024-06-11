@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div>
       <header>
-        <h3>Logo</h3>
+        <h3>T&J</h3>
         <nav ref={navRef}>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "inactive")}
