@@ -9,7 +9,7 @@ function Password() {
   const submit = (e) => {
     setInputValue(inputValue);
     //console.log(inputValue);
-    if (inputValue === "password") {
+    if (inputValue.toLowerCase() === "password") {
       //console.log("WOO HOO");
       navigate("/captcha");
     } else {

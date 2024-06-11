@@ -1,24 +1,5 @@
-/* .header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
-
 .home_image {
   width: 25rem;
   height: 25rem;
 }
 
-
-@media all and (max-width: 430px) {
-  .nav {
-    column-gap: 2rem;
-  }
-}
-
-@media all and (max-width: 300px){
-    .nav {
-    column-gap: 15px;
-  }
-}
