@@ -1,74 +1,62 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
   return (
     <div>
-      <header className="header">
-        <nav className="nav container">
-          <div>
-              <div className="nav_menu">
-                <ul className="nav_list grid hidden lg:flex lg:items-center">
-                  <li className="nav_item">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "active" : "inactive"
-                      }
-                      to="/home"
-                    >
-                      Home
-                    </NavLink>
-                  </li>
+      <header>
+        <h3>Logo</h3>
+        <nav ref={navRef}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/home"
+          >
+            Home
+          </NavLink>
 
-                  <li className="nav_item">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "active" : "inactive"
-                      }
-                      to="/faq"
-                    >
-                      FAQ
-                    </NavLink>
-                  </li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/faq"
+          >
+            FAQ
+          </NavLink>
 
-                  <li className="nav_item">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "active" : "inactive"
-                      }
-                      to="/ourstory"
-                    >
-                      Our Story
-                    </NavLink>
-                  </li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/ourstory"
+          >
+            Our Story
+          </NavLink>
 
-                  <li className="nav_item">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "active" : "inactive"
-                      }
-                      to="/registry"
-                    >
-                      Registry
-                    </NavLink>
-                  </li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/registry"
+          >
+            Registry
+          </NavLink>
 
-                  <li className="nav_item">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "active" : "inactive"
-                      }
-                      to="/venue"
-                    >
-                      Venue
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-          </div>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/venue"
+          >
+            Venue
+          </NavLink>
+
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
         </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
       </header>
     </div>
   );
